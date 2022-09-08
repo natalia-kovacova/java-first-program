@@ -11,7 +11,7 @@ public class SavingsCalculator {
         this.debits = debits;
     }
 
-    public float sumOfCredits(){
+    private float sumOfCredits(){
         float sum = 0.0f;
         for (float credit: credits) {
             sum += credit;
@@ -19,7 +19,7 @@ public class SavingsCalculator {
         return sum;
     }
 
-    public float sumOfDebits(){
+    private float sumOfDebits(){
         float sum = 0.0f;
         for (float debit: debits) {
             sum += debit;
